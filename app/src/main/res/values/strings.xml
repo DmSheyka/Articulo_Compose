@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Artículo de Compose</string>
+    <string name="titulo_tutorial">Tutorial de Jetpack Compose</string>
+    <string name="texto_descripcion_corta">Jetpack Compose es un moderno conjunto de herramientas para crear interfaces de usuario nativas de Android. Compose simplifica y acelera el desarrollo de interfaces de usuario en Android con menos código, herramientas potentes y API Kotlin intuitivas.</string>
+    <string name="texto_descripcion_completa">En este tutorial, construirás un componente de interfaz de usuario simple con funciones declarativas. Llamas a las funciones Compose para decir qué elementos quieres y el compilador Compose hace el resto. Compose está construido alrededor de funciones Composables. Estas funciones le permiten definir la interfaz de usuario de su aplicación mediante programación, ya que le permiten describir el aspecto que debe tener y proporcionar dependencias de datos, en lugar de centrarse en el proceso de construcción de la interfaz de usuario, como la inicialización de un elemento y, a continuación, adjuntarlo a un padre. Para crear una función Composable, añada la anotación @Composable al nombre de la función.</string>
+</resources>
