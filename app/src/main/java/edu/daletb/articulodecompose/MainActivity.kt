@@ -37,22 +37,23 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
 @Composable
 fun ArticuloCompose(){
     TarjetaArticulo(
         titulo = stringResource(R.string.titulo_tutorial),
-        descripcion_corta = stringResource(R.string.texto_descripcion_corta),
-        descripcion_completa = stringResource(R.string.texto_descripcion_completa),
+        descripcionCorta = stringResource(R.string.texto_descripcion_corta),
+        descripcionCompleta = stringResource(R.string.texto_descripcion_completa),
         img = painterResource(R.drawable.bg_compose_background)
     )
 }
+
 @Composable
 fun TarjetaArticulo(
     titulo: String,
-    descripcion_corta: String,
-    descripcion_completa: String,
+    descripcionCorta: String,
+    descripcionCompleta: String,
     img: Painter,
-    modifier: Modifier = Modifier,
 ) {
     Column(modifier = Modifier) {
         Image(painter = img, contentDescription = null)
@@ -62,12 +63,12 @@ fun TarjetaArticulo(
             fontSize = 24.sp
         )
         Text(
-            text = descripcion_corta,
+            text = descripcionCorta,
             modifier = Modifier.padding(start = 16.dp, end = 16.dp),
             textAlign = TextAlign.Justify
         )
         Text(
-            text = descripcion_completa,
+            text = descripcionCompleta,
             modifier = Modifier.padding(16.dp),
             textAlign = TextAlign.Justify
 
@@ -77,8 +78,7 @@ fun TarjetaArticulo(
 
 @Preview(showBackground = true)
 @Composable
-fun ArticuloComposePrevista(){
-
+fun VistaPreviaArticuloCompose(){
     ArtículoDeComposeTheme {
         ArticuloCompose()
     }
